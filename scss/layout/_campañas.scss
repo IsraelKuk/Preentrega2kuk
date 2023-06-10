@@ -1,0 +1,72 @@
+/* campañas*/
+.pseudos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    max-height: 100%;
+    background-color: #eeee;
+    gap: 40px;
+    padding: 20px;
+}
+
+.pseudo {
+    width: 90%;
+    height: 500px;
+    background-color: #CC9544;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #eeee;
+    transition: .5s;
+    overflow: hidden;
+    img {
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        filter: blur(2px);
+        transition: .5s;
+    }
+}
+
+.pseudo__container {
+    padding: 50px;
+    width: 50%;
+}
+
+
+.pseudo:hover {
+    background-color: #cc5d44;
+    box-shadow: 5px 5px 15px 0px #4a4a4a;
+    img {
+        filter: blur(0);
+        width: 50%;
+        height: 900px;
+    }
+}
+
+.pseudo:nth-child(odd) {
+    background-color: rgb(4, 34, 34);
+    color: #eeee;
+    &:hover {
+        background-color: #49c989;
+        box-shadow: 5px 5px 15px 0px #4a4a4a;
+    }
+}
+
+@media (max-width: 767px) {
+    .pseudo {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .pseudo img {
+        width: 100%;
+        height: auto;
+    }
+    .pseudo__container {
+        width: 100%;
+    }
+}

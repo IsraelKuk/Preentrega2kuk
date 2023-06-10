@@ -1,0 +1,16 @@
+
+
+.hero {
+    background-color: #f7f1e5;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    img {
+        width: 60%;
+        height: 700px;
+        object-fit: cover;
+        border-radius: 100px;
+        padding: 30px;
+    }
+}
