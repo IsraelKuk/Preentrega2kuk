@@ -57,7 +57,7 @@ body {
   overflow: hidden;
 }
 .pseudo img {
-  width: 40%;
+  width: 50%;
   height: 100%;
   object-fit: cover;
   filter: blur(2px);
@@ -82,36 +82,26 @@ body {
 .pseudo:nth-child(odd) {
   background-color: rgb(4, 34, 34);
   color: rgba(238, 238, 238, 0.9333333333);
-  flex-direction: row-reverse;
 }
 .pseudo:nth-child(odd):hover {
   background-color: #49c989;
   box-shadow: 5px 5px 15px 0px #4a4a4a;
 }
 
-/*.pseudo:nth-child(odd):hover {
-    background-color: #49c989;
-    box-shadow: 5px 5px 15px 0px #4a4a4a;
-}*/
-/* @media only screen and (max-width:480px) {
-    .pseudo img{
-            display: flex;
-           /* width: 40%;
-            height: 250px;
-
-            justify-content:center;
-            align-items: center;
-
-    }
-    .pseudo__container{
-        display: flex;
-        flex-direction: column;
-
-
-            justify-content:center;
-            align-items: center;
-    }
-}*/
+@media (max-width: 767px) {
+  .pseudo {
+    height: auto;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .pseudo img {
+    width: 100%;
+    height: auto;
+  }
+  .pseudo__container {
+    width: 100%;
+  }
+}
 /*nosotros*/
 .nosotros {
   text-align: justify;
